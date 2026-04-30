@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+  <html lang="uz">
+  <head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="To'y va marosimlar uchun premium animatsion taklifnomalar yarating va ulashing">
+  <title>Taklifnoma - Premium Animatsion Taklifnomalar</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="style3.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>L</text></svg>">
+  </head>
+  <body>
+
+  <!-- ===== CREATOR VIEW ===== -->
+  <div id="creator-view">
+
+  <nav class="nav" id="navbar">
+    <a href="#" class="nav-logo">Taklifnoma</a>
+    <div class="nav-links">
+      <a href="#features">Imkoniyatlar</a>
+      <a href="#create">Yaratish</a>
+      <a href="#create" class="nav-cta">Boshlash -></a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <video class="hero-video" autoplay muted loop playsinline id="hero-video">
+    <source src="hero.mp4" type="video/mp4">
+      <source src="../0429.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Premium Taklifnomalar</div>
+      <h1>Sehrli <em>Taklifnomalar</em><br>Yarating</h1>
+      <p>To'y, sunnat to'yi va marosimlaringiz uchun chiroyli animatsion taklifnomalar. Bir daqiqada tayyorlang, Telegram va WhatsApp orqali yuboring.</p>
+      <div class="hero-btns">
+        <a href="#create" class="btn btn-gold">* Taklifnoma yaratish</a>
+        <a href="#features" class="btn btn-outline-white">Ko'proq bilish</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">Pastga aylantiring</div>
+  </section>
+
+  <!-- FEATURES -->
+  <div class="features-wrap">
+    <div class="features-inner">
+      <div class="features-header fade-in">
+        <span class="section-label">Nima uchun biz</span>
+      <h2 class="section-title">Har bir marosim uchun<br>mukammal taklifnoma</h2>
+      </div>
+      <div class="features-grid">
+        <div class="feat-card fade-in"><span class="feat-icon">P</span><h3>8 ta Premium Shablon</h3><p>Oltin, Gul, Shohona, Zamonaviy va boshqa uslublarda chiroyli dizaynlar</p></div>
+        <div class="feat-card fade-in"><span class="feat-icon">V</span><h3>Video Qo'shish</h3><p>Taklifnomaga shaxsiy video va rasm qo'shish imkoniyati</p></div>
+        <div class="feat-card fade-in"><span class="feat-icon">S</span><h3>Shrift Tanlash</h3><p>6 xil chiroyli kaligrafik shrift orasidan o'zingizga mosini tanlang</p></div>
+      <div class="feat-card fade-in"><span class="feat-icon">C</span><h3>3D Konvert</h3><p>Mehmon linkni ochganda sehrli 3D konvert animatsiyasini ko'radi</p></div>
+        <div class="feat-card fade-in"><span class="feat-icon">U</span><h3>Oson Ulashish</h3><p>Telegram, WhatsApp yoki SMS orqali bir tugma bilan yuboring</p></div>
+        <div class="feat-card fade-in"><span class="feat-icon">R</span><h3>RSVP Javob</h3><p>Mehmonlar to'g'ridan-to'g'ri taklifnomadan javob yuborishlari mumkin</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- FORM -->
+  <div class="form-wrap" id="create">
+    <div class="form-inner">
+      <div class="form-header fade-in">
+        <span class="section-label">Yaratish</span>
+        <h2 class="section-title">Taklifnomangizni<br>moslashtirib oling</h2>
+      </div>
+      <div class="form-card fade-in">
+        <div class="form-tabs">
+          <button class="form-tab active" onclick="switchTab('info')">M Ma'lumotlar</button>
+          <button class="form-tab" onclick="switchTab('media')">M Rasm / Video</button>
+          <button class="form-tab" onclick="switchTab('design')">D Dizayn</button>
+        </div>
+
+        <form id="inv-form">
+          <!-- TAB 1 -->
+          <div class="tab-content active" id="tab-info">
+            <div class="form-group">
+              <label for="ev-type">Marosim turi</label>
+              <select id="ev-type" onchange="toggleNames()">
+                <option value="wedding">W To'y marosimi</option>
+                <option value="nikoh">N Nikoh to'yi</option>
+                <option value="sunnat">S Sunnat to'yi</option>
+                <option value="birthday">B Tug'ilgan kun</option>
+                <option value="beshik">B Beshik to'yi</option>
+                <option value="other">O Boshqa marosim</option>
+            </select>
+          </div>
+          <div id="wedding-names">
+            <div class="form-row">
+              <div class="form-group"><label>Kuyov ismi</label><input type="text" id="groom" placeholder="Jasur" required></div>
+                <div class="form-group"><label>Kelin ismi</label><input type="text" id="bride" placeholder="Madina" required></div>
+              </div>
+              <div class="form-row">
+                <div class="form-group"><label>Kuyov oilasi</label><input type="text" id="groom-fam" placeholder="Karimovlar oilasi"></div>
+                <div class="form-group"><label>Kelin oilasi</label><input type="text" id="bride-fam" placeholder="Aliyevlar oilasi"></div>
+              </div>
+            </div>
+            <div id="single-name" style="display:none">
+              <div class="form-row">
+                <div class="form-group"><label>Ism</label><input type="text" id="p-name" placeholder="Ism kiriting"></div>
+                <div class="form-group"><label>Oila</label><input type="text" id="p-fam" placeholder="Oila nomi"></div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label>Sana</label><input type="date" id="ev-date" required></div>
+              <div class="form-group"><label>Vaqt</label><input type="time" id="ev-time" required></div>
+            </div>
+            <div class="form-group"><label>To'yxona / Joy nomi</label><input type="text" id="venue" placeholder="Navruz to'yxonasi" required></div>
+            <div class="form-group"><label>Manzil</label><input type="text" id="address" placeholder="Toshkent sh., Chilonzor tumani" required></div>
+            <div class="form-group"><label>Telefon (RSVP uchun)</label><input type="tel" id="host-tel" placeholder="+998901234567"></div>
+            <div class="form-group"><label>Qo'shimcha xabar (ixtiyoriy)</label><textarea id="msg" placeholder="Mehmonlarga xabar..."></textarea></div>
+          </div>
+
+          <!-- TAB 2 -->
+          <div class="tab-content" id="tab-media">
+            <div class="form-group">
+              <label>Rasm yuklash</label>
+              <div class="upload-zone" onclick="document.getElementById('img-input').click()">
+                <span class="upload-icon">I</span>
+                <p>Rasm yuklash uchun bosing</p>
+                <small>JPG, PNG - max 2MB</small>
+                <div class="upload-preview" id="img-preview"><img id="prev-img" src="" alt=""></div>
+              </div>
+              <input type="file" id="img-input" accept="image/*" style="display:none" onchange="handleImg(this)">
+            </div>
+            <div class="divider-line">yoki</div>
+            <div class="form-group">
+              <label>Video yuklash (ixtiyoriy)</label>
+              <div class="upload-zone" onclick="document.getElementById('vid-input').click()">
+                <span class="upload-icon">V</span>
+                <p>Video yuklash uchun bosing</p>
+                <small>MP4, MOV - max 30MB</small>
+                <div class="upload-preview" id="vid-preview"><video id="prev-vid" controls muted style="display:none"></video></div>
+            </div>
+            <input type="file" id="vid-input" accept="video/*" style="display:none" onchange="handleVid(this)">
+            </div>
+          </div>
+
+          <!-- TAB 3 -->
+          <div class="tab-content" id="tab-design">
+            <div class="form-group">
+              <label class="templates-label">Shablon tanlang</label>
+              <div class="templates-scroll">
+                <div class="tmpl-item active" data-t="gold" onclick="selTmpl('gold')"><div class="tmpl-thumb t-gold"><div>K</div><span style="color:#5a3e00">OLTIN</span></div></div>
+                <div class="tmpl-item" data-t="rose" onclick="selTmpl('rose')"><div class="tmpl-thumb t-rose"><div>F</div><span style="color:#880e4f">GUL</span></div></div>
+                <div class="tmpl-item" data-t="royal" onclick="selTmpl('royal')"><div class="tmpl-thumb t-royal"><div>C</div><span style="color:#FFD700">SHOHONA</span></div></div>
+                <div class="tmpl-item" data-t="modern" onclick="selTmpl('modern')"><div class="tmpl-thumb t-modern"><div>M</div><span style="color:#E0E7FF">ZAMONAVIY</span></div></div>
+                <div class="tmpl-item" data-t="sage" onclick="selTmpl('sage')"><div class="tmpl-thumb t-sage"><div>L</div><span style="color:#1B5E20">TABIAT</span></div></div>
+                <div class="tmpl-item" data-t="onyx" onclick="selTmpl('onyx')"><div class="tmpl-thumb t-onyx"><div>D</div><span style="color:#C9A84C">ONIX</span></div></div>
+                <div class="tmpl-item" data-t="azure" onclick="selTmpl('azure')"><div class="tmpl-thumb t-azure"><div>W</div><span style="color:#0D47A1">KO'K</span></div></div>
+                <div class="tmpl-item" data-t="pearl" onclick="selTmpl('pearl')"><div class="tmpl-thumb t-pearl"><div>P</div><span style="color:#7a6a52">MARVARID</span></div></div>
+              </div>
+            </div>
+            <div class="form-group" style="margin-top:32px">
+              <label>Yozuv shriftini tanlang</label>
+            <div class="fonts-grid">
+              <div class="font-item ff-gv active" data-f="Great Vibes" onclick="selFont(this)"><div class="fp">Madina</div><small>Great Vibes</small></div>
+                <div class="font-item ff-pd" data-f="Playfair Display" onclick="selFont(this)"><div class="fp">Madina</div><small>Playfair</small></div>
+                <div class="font-item ff-ds" data-f="Dancing Script" onclick="selFont(this)"><div class="fp">Madina</div><small>Dancing Script</small></div>
+                <div class="font-item ff-cz" data-f="Cinzel" onclick="selFont(this)"><div class="fp">Madina</div><small>Cinzel</small></div>
+                <div class="font-item ff-sc" data-f="Sacramento" onclick="selFont(this)"><div class="fp">Madina</div><small>Sacramento</small></div>
+                <div class="font-item ff-cg" data-f="Cormorant Garamond" onclick="selFont(this)"><div class="fp">Madina</div><small>Cormorant</small></div>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center;margin-top:24px;font-size:16px;padding:18px">* Taklifnoma yaratish va ulashish</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  </div><!-- /creator-view -->
+
+  <!-- ===== INVITATION VIEW (GUEST) ===== -->
+  <div id="inv-view" style="display:none">
+
+    <!-- ENVELOPE -->
+    <div class="env-wrapper" id="env-wrapper">
+      <div class="env-scene" onclick="openEnv()">
+        <div class="env-box" id="env-box">
+          <div class="env-face env-body">
+            <div class="env-seal">L</div>
+          </div>
+          <div class="env-flap"></div>
+          <div class="env-letter">
+            <div class="env-letter-content">Sizga maxsus<br>taklifnoma</div>
+        </div>
+      </div>
+    </div>
+      <p class="env-hint">+ Konvertni bosib oching +</p>
+    </div>
+
+    <!-- CARD -->
+    <div class="inv-wrap" id="inv-wrap">
+      <div class="inv-card-outer" id="inv-card"><!-- injected --></div>
+
+      <!-- RSVP -->
+      <div class="rsvp-wrap">
+        <div class="rsvp-card">
+          <h3>Javobingiz</h3>
+          <p>Marosimga qatnasha olasizmi?</p>
+        <div class="rsvp-btns">
+          <button class="rsvp-btn yes" onclick="selRsvp('yes')">Y Qatnashaman</button>
+            <button class="rsvp-btn no" onclick="selRsvp('no')">N Kela olmayman</button>
+        </div>
+        <div class="rsvp-fields" id="rsvp-fields">
+          <input type="text" id="rv-name" placeholder="Ismingiz">
+            <input type="number" id="rv-guests" placeholder="Mehmonlar soni" min="1" max="20" value="1">
+            <textarea id="rv-msg" placeholder="Tabrik yoki xabar (ixtiyoriy)" rows="3"></textarea>
+            <div class="rsvp-send">
+              <button class="rsvp-send-btn rsb-tg" onclick="sendRsvp('tg')">T Telegram orqali yuborish</button>
+              <button class="rsvp-send-btn rsb-wa" onclick="sendRsvp('wa')">W WhatsApp orqali yuborish</button>
+              <button class="rsvp-send-btn rsb-sms" onclick="sendRsvp('sms')">S SMS orqali yuborish</button>
+          </div>
+        </div>
+        <div class="rsvp-success" id="rsvp-ok">Javobingiz yuborildi! Rahmat!</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SHARE MODAL -->
+<div class="modal-overlay" id="modal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal()">X</button>
+      <h3>* Taklifnomani ulashing</h3>
+      <div class="link-row">
+        <input type="text" id="share-link" readonly>
+        <button onclick="copyLink()">N Nusxa</button>
+      </div>
+      <div class="share-grid">
+        <button class="share-item si-tg" onclick="doShare('tg')">T Telegram orqali yuborish</button>
+        <button class="share-item si-wa" onclick="doShare('wa')">W WhatsApp orqali yuborish</button>
+        <button class="share-item si-sms" onclick="doShare('sms')">S SMS orqali yuborish</button>
+    </div>
+    <div class="copy-ok" id="copy-ok">Link nusxalandi!</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  </body>
+  </html>
+  
